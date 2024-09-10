@@ -93,8 +93,32 @@ main {
   padding-bottom: 24px;
 }
 
+/* Recipe component */
+.recipe {
+  background-color: var(--white);
+  max-width: 45rem;
+}
+
+.recipe img {
+  margin-bottom: 2rem;
+}
+
+.recipe-text {
+  padding: 0 2rem 2rem;
+}
+
 @media only screen and (min-width: 30rem) {
   body {
     padding: 24px;
+  }
+  .recipe {
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  .recipe img {
+    border-radius: 0.5rem;
+  }
+  .recipe-text {
+    padding: 0;
   }
 }
