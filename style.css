@@ -45,6 +45,23 @@ h6 {
 }
 
 /* General styles and layout */
+@font-face {
+  font-family: "Young Serif";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.woff2)
+    format(woff2-variations);
+}
+
 :root {
   --white: rgb(255, 255, 255);
   --stone-100: rgb(243, 230, 216);
