@@ -43,3 +43,15 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+/* General styles and layout */
+:root {
+  --white: rgb(255, 255, 255);
+  --stone-100: rgb(243, 230, 216);
+  --stone-150: rgb(228, 222, 216);
+  --stone-600: rgb(95, 87, 78);
+  --stone-900: rgb(48, 45, 44);
+  --brown-800: rgb(133, 70, 50);
+  --rose-800: rgb(123, 40, 79);
+  --rose-50: rgb(255, 245, 250);
+}
