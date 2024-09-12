@@ -109,7 +109,7 @@ main {
   padding: 0 2rem 2rem;
 }
 
-.recipe h1 {
+.recipe-text h1 {
   font-family: "Young Serif", serif;
   font-size: 2.25rem;
   font-weight: 400;
@@ -118,23 +118,52 @@ main {
   margin-bottom: 1.75rem;
 }
 
-.recipe p {
+.recipe-text > h2 {
+  font-family: "Young Serif", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: var(--brown-800);
+  margin: 1.75rem 0 1.5rem;
+}
+
+.recipe-text p {
   margin-bottom: 1.5rem;
 }
 
 /* Recipe component: lists */
 
-.recipe ul,
-.recipe ol {
+.recipe-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recipe-text li + li {
+  margin-top: 0.5rem;
+}
+
+.recipe-text ul li {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  padding-left: 0.25rem;
+}
+
+.recipe-text ul li::before {
+  content: "•";
+  font-weight: 700;
+  color: var(--brown-800);
+}
+
+.recipe-text ol {
   padding-left: 1.25rem;
 }
 
-.recipe li {
+.recipe-text ol li {
   padding-left: 1.25rem;
   padding-bottom: 0.5rem;
 }
 
-.recipe em {
+.recipe-text em {
   font-weight: 700;
   font-style: normal;
 }
@@ -154,7 +183,7 @@ main {
   margin-bottom: 0.75rem;
 }
 
-.card li::marker {
+.card ul li::before {
   color: var(--rose-800);
 }
 
@@ -174,7 +203,7 @@ main {
   .recipe-text {
     padding: 0;
   }
-  .recipe h1 {
+  .recipe-text h1 {
     font-size: 2.5rem;
   }
 }
