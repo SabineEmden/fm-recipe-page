@@ -45,12 +45,13 @@ h6 {
 }
 
 /* General styles and layout */
+
 @font-face {
   font-family: "Young Serif";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url(./assets/fonts/young-serif/YoungSerif-Regular.woff2) format(woff2);
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.woff2), format(woff2);
 }
 
 @font-face {
@@ -58,8 +59,8 @@ h6 {
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.woff2)
-    format(woff2-variations);
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.woff2),
+    format(woff2-variable);
 }
 
 :root {
@@ -93,7 +94,8 @@ main {
   padding-bottom: 24px;
 }
 
-/* Recipe component */
+/* Recipe component: general styles and layout */
+
 .recipe {
   background-color: var(--white);
   max-width: 45rem;
@@ -107,6 +109,57 @@ main {
   padding: 0 2rem 2rem;
 }
 
+.recipe h1 {
+  font-family: "Young Serif", serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--stone-900);
+  margin-bottom: 1.75rem;
+}
+
+.recipe p {
+  margin-bottom: 1.5rem;
+}
+
+/* Recipe component: lists */
+
+.recipe ul,
+.recipe ol {
+  padding-left: 1.25rem;
+}
+
+.recipe li {
+  padding-left: 1.25rem;
+  padding-bottom: 0.5rem;
+}
+
+.recipe em {
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Card: Preparation Time */
+
+.card {
+  background-color: var(--rose-50);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.card h2 {
+  color: var(--rose-800);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.card li::marker {
+  color: var(--rose-800);
+}
+
+/* Desktop design */
+
 @media only screen and (min-width: 30rem) {
   body {
     padding: 24px;
@@ -116,9 +169,12 @@ main {
     padding: 2rem;
   }
   .recipe img {
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
   }
   .recipe-text {
     padding: 0;
+  }
+  .recipe h1 {
+    font-size: 2.5rem;
   }
 }
