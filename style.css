@@ -123,7 +123,7 @@ main {
   font-size: 1.75rem;
   font-weight: 400;
   color: var(--brown-800);
-  margin: 1.75rem 0 1.5rem;
+  margin: 1.5rem 0 1rem;
 }
 
 .recipe-text p {
@@ -134,7 +134,7 @@ main {
 
 .recipe-text ul {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
 
 .recipe-text li + li {
@@ -160,12 +160,22 @@ main {
 
 .recipe-text ol li {
   padding-left: 1.25rem;
-  padding-bottom: 0.5rem;
+}
+
+.recipe-text ol li::marker {
+  font-weight: 700;
+  color: var(--brown-800);
 }
 
 .recipe-text em {
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
+}
+
+.list-ingredients,
+.list-instructions {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--stone-100);
 }
 
 /* Card: Preparation Time */
@@ -179,7 +189,7 @@ main {
 .card h2 {
   color: var(--rose-800);
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.75rem;
 }
 
