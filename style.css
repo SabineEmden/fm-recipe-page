@@ -84,6 +84,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100svh;
+  padding-bottom: 24px;
 }
 
 main {
@@ -223,6 +224,15 @@ td {
 tr:not(:first-child) td,
 tr:not(:first-child) th {
   border-top: 1px solid var(--stone-100);
+}
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--brown-800);
 }
 
 /* Desktop design */
