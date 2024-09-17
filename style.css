@@ -130,6 +130,21 @@ main {
   margin-bottom: 1.5rem;
 }
 
+/* Card: Preparation Time */
+
+.card {
+  background-color: var(--rose-50);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.card h2 {
+  color: var(--rose-800);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
 /* Recipe component: lists */
 
 .recipe-text ul {
@@ -151,6 +166,13 @@ main {
 .recipe-text ul li::before {
   content: "•";
   font-weight: 700;
+}
+
+.list-time li::before {
+  color: var(--rose-800);
+}
+
+.list-ingredients li::before {
   color: var(--brown-800);
 }
 
@@ -174,27 +196,33 @@ main {
 
 .list-ingredients,
 .list-instructions {
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.75rem;
   border-bottom: 1px solid var(--stone-100);
 }
 
-/* Card: Preparation Time */
+/* Table: Nutrition */
 
-.card {
-  background-color: var(--rose-50);
-  border-radius: 0.75rem;
-  padding: 1.5rem;
+.recipe-text table {
+  table-layout: fixed;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
 }
 
-.card h2 {
-  color: var(--rose-800);
-  font-size: 1.25rem;
+th {
+  font-weight: 400;
+  padding: 0.5rem 0 0.5rem 2rem;
+}
+
+td {
+  color: var(--brown-800);
   font-weight: 700;
-  margin-bottom: 0.75rem;
+  padding: 0.5rem 0;
 }
 
-.card ul li::before {
-  color: var(--rose-800);
+tr:not(:first-child) td,
+tr:not(:first-child) th {
+  border-top: 1px solid var(--stone-100);
 }
 
 /* Desktop design */
