@@ -20,20 +20,21 @@
     <main>
       <article class="recipe">
         <img
+          class="image"
           src="./assets/images/image-omelette.jpeg"
           alt="a delicious looking omelette filled with vegetables"
         />
         <div class="recipe-text">
-          <h1>Simple Omelette Recipe</h1>
-          <p>
+          <h1 class="main-heading">Simple Omelette Recipe</h1>
+          <p class="recipe-paragraph">
             An easy and quick dish, perfect for any meal. This classic omelette
             combines beaten eggs cooked to perfection, optionally filled with
             your choice of cheese, vegetables, or meats.
           </p>
           <div class="card">
-            <h2>Preparation time</h2>
+            <h2 class="card-heading">Preparation time</h2>
             <!-- list-style: none causes Safari to no longer recognize the list in the accessibility tree -->
-            <ul class="list-time" role="list">
+            <ul class="list unordered time" role="list">
               <li>
                 <span><em>Total:</em> Approximately 10 minutes</span>
               </li>
@@ -45,9 +46,9 @@
               </li>
             </ul>
           </div>
-          <h2>Ingredients</h2>
+          <h2 class="section-heading">Ingredients</h2>
           <!-- list-style: none causes Safari to no longer recognize the list in the accessibility tree -->
-          <ul class="list-ingredients" role="list">
+          <ul class="list unordered ingredients" role="list">
             <li>2-3 large eggs</li>
             <li>Salt, to taste</li>
             <li>Pepper, to taste</li>
@@ -56,8 +57,8 @@
               Optional fillings: cheese, diced vegetables, cooked meats, herbs
             </li>
           </ul>
-          <h2>Instructions</h2>
-          <ol class="list-instructions">
+          <h2 class="section-heading">Instructions</h2>
+          <ol class="list instructions">
             <li>
               <em>Beat the eggs:</em> In a bowl, beat the eggs with a pinch of
               salt and pepper until they are well mixed. You can add a
@@ -87,12 +88,12 @@
               needed.
             </li>
           </ol>
-          <h2>Nutrition</h2>
-          <p>
+          <h2 class="section-heading">Nutrition</h2>
+          <p class="recipe-paragraph">
             The table below shows nutritional values per serving without the
             additional fillings.
           </p>
-          <table>
+          <table class="nutrition">
             <tr>
               <th scope="row">Calories</th>
               <td>277kcal</td>
