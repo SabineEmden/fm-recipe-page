@@ -34,7 +34,7 @@ The brief for this project was to build out the recipe page and get it looking a
 
 ### Links
 
-- [Frontend Mentor solution]() - LINK COMING SOON
+- [Frontend Mentor solution](https://www.frontendmentor.io/solutions/recipe-page-with-custom-list-markers-XFV9gYFKZ_)
 - [GitHub repository](https://github.com/SabineEmden/fm-recipe-page)
 - [Live site](https://sabineemden.github.io/fm-recipe-page/)
 
@@ -65,7 +65,7 @@ For the ordered list, I styled the counters using the `::marker` pseudo-element:
 }
 ```
 
-Styling the list markers for the unordered lists was a bit more challenging. In the JPEG design file for the mobile layout, the markers do not sit next to the first line of text but are centered vertically if the text content of the list item wraps over two lines. I used custom markers with the `::before` pseudo-element to position the markers with flexbox.
+Styling the list markers for the unordered lists was a bit more challenging. In the JPEG design file for the mobile layout, the markers do not sit next to the first line of text but are centered vertically if the text content of the list item wraps over two lines. I used custom markers with the `::before` pseudo-element to position the markers with flexbox:
 
 ```css
 .unordered {
