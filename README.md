@@ -1,6 +1,6 @@
 # Frontend Mentor - Recipe page solution
 
-This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -16,26 +16,27 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
+
+### The challenge
+
+The brief for this project was to build out the recipe page and get it looking as close to the design as possible, starting with the following assets:
+
+- JPEG design files for mobile & desktop layouts
+- Style guide for fonts, colors, etc.
+- Optimized image assets
+- Variable and static font files
+- HTML file with pre-written contents
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Frontend Mentor solution]() - LINK COMING SOON
+- [GitHub repository](https://github.com/SabineEmden/fm-recipe-page)
+- [Live site](https://sabineemden.github.io/fm-recipe-page/)
 
 ## My process
 
@@ -43,62 +44,64 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This solution includes three things that were new to me:
 
-To see how you can add code snippets, see below:
+- Styling list markers
+- Styling HTML tables
+- Using media queries
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+The recipe page contains two unordered lists for preparation time and ingredients, respectively, and an ordered list for the instructions.
+
+For the ordered list, I styled the counters using the `::marker` pseudo-element:
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.instructions li::marker {
+  font-weight: 700;
+  color: var(--brown-800);
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Styling the list markers for the unordered lists was a bit more challenging. In the JPEG design file for the mobile layout, the marker sits not next to the first line of text but is centered vertically if the text content of the list item wraps over two lines. I used custom markers with the `::before` pseudo-element to position the markers with flexbox.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```css
+.unordered {
+  list-style: none;
+  padding-left: 0;
+}
+
+.unordered li {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  padding-left: 0.25rem;
+}
+
+.unordered li::before {
+  content: "•";
+  font-weight: 700;
+}
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I need to learn image optimization. Currently, the biggest file in this whole project is the screenshot I took for this README. I learned how to optimize font files. Now my screenshot is bigger than all font files for this project combined.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Creative list styling](https://web.dev/articles/creative-list-styling) by Michelle Barker for web.de - This helped me to figure out how to style the list markers of both the ordered and unordered lists.
+- [Styling tables](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables) on MDN - This article is a good refresher for basic table styling techniques.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@SabineEmden](https://www.frontendmentor.io/profile/SabineEmden)
+- Mastodon - [@sabineemden](https://mastodon.online/@sabineemden)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+This project uses Josh Comeau's [CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/).
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+The font families used in this project are [Young Serif](https://fonts.google.com/specimen/Young+Serif) and [Outfit](https://fonts.google.com/specimen/Outfit). The fonts are licensed under the [Open Font License](https://openfontlicense.org).
