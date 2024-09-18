@@ -54,7 +54,7 @@ This solution includes three things that were new to me:
 - Styling HTML tables
 - Using media queries
 
-The recipe page contains two unordered lists for preparation time and ingredients, respectively, and an ordered list for the instructions.
+The recipe page contains two unordered lists with preparation time and ingredients, respectively, and an ordered list with the instructions.
 
 For the ordered list, I styled the counters using the `::marker` pseudo-element:
 
@@ -65,7 +65,7 @@ For the ordered list, I styled the counters using the `::marker` pseudo-element:
 }
 ```
 
-Styling the list markers for the unordered lists was a bit more challenging. In the JPEG design file for the mobile layout, the marker sits not next to the first line of text but is centered vertically if the text content of the list item wraps over two lines. I used custom markers with the `::before` pseudo-element to position the markers with flexbox.
+Styling the list markers for the unordered lists was a bit more challenging. In the JPEG design file for the mobile layout, the markers do not sit next to the first line of text but are centered vertically if the text content of the list item wraps over two lines. I used custom markers with the `::before` pseudo-element to position the markers with flexbox.
 
 ```css
 .unordered {
@@ -88,11 +88,11 @@ Styling the list markers for the unordered lists was a bit more challenging. In 
 
 ### Continued development
 
-I need to learn image optimization. Currently, the biggest file in this whole project is the screenshot I took for this README. I learned how to optimize font files. Now my screenshot is bigger than all font files for this project combined.
+I need to learn image optimization! Currently, the largest file in this project is the screenshot I took for this README. I learned how to optimize font files. Now the file size of the screenshot is larger than the size of all font files combined.
 
 ### Useful resources
 
-- [Creative list styling](https://web.dev/articles/creative-list-styling) by Michelle Barker for web.de - This helped me to figure out how to style the list markers of both the ordered and unordered lists.
+- [Creative list styling](https://web.dev/articles/creative-list-styling) by Michelle Barker for web.de - This article helped me to figure out how to style the list markers for both the ordered and unordered lists.
 - [Styling tables](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables) on MDN - This article is a good refresher for basic table styling techniques.
 
 ## Author
