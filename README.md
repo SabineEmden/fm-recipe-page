@@ -34,7 +34,7 @@ The brief for this project was to build out the recipe page and get it looking a
 
 ### Links
 
-- [Frontend Mentor solution](https://www.frontendmentor.io/solutions/recipe-page-with-custom-list-markers-XFV9gYFKZ_)
+- [Frontend Mentor solution]()
 - [GitHub repository](https://github.com/SabineEmden/fm-recipe-page)
 - [Live site](https://sabineemden.github.io/fm-recipe-page/)
 
@@ -85,6 +85,8 @@ Styling the list markers for the unordered lists was a bit more challenging. In 
   font-weight: 700;
 }
 ```
+
+For better accessibility, I used `role="list"` on the `<ul>` elements in the HTML. Without it, `list-style: none` would causes the Safari browser to no longer recognize the lists in the accessibility tree, and screen reader would no longer announce information such as the number of items.
 
 ### Continued development
 
