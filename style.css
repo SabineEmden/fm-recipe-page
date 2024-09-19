@@ -220,7 +220,7 @@ main {
   padding: 0.5rem 0;
 }
 
-tr ~ tr {
+.nutrition tr ~ tr {
   border-top: 1px solid var(--stone-150);
 }
 
