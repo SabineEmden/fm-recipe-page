@@ -197,7 +197,7 @@ main {
 .ingredients,
 .instructions {
   padding-bottom: 1.75rem;
-  border-bottom: 1px solid var(--stone-100);
+  border-bottom: 1px solid var(--stone-150);
 }
 
 /* Table: Nutrition */
@@ -222,7 +222,7 @@ main {
 
 tr:not(:first-child) td,
 tr:not(:first-child) th {
-  border-top: 1px solid var(--stone-100);
+  border-top: 1px solid var(--stone-150);
 }
 
 /* Footer */
