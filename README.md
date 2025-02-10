@@ -99,8 +99,11 @@ I need to learn image optimization! Currently, the largest file in this project 
 
 ## Author
 
+I'm an aspiring web developer and a former chemist. What I bring from chemistry to software development is a systematic approach to problem solving and the perseverance to not give up easily.
+
 - Frontend Mentor - [@SabineEmden](https://www.frontendmentor.io/profile/SabineEmden)
-- Mastodon - [@sabineemden](https://mastodon.online/@sabineemden)
+- Personal Website - [Sabine Emden](https://www.sabineemden.com/)
+- Mastodon - [@sabineemden](https://social.tchncs.de/@sabineemden)
 
 ## Acknowledgments
 
