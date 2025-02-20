@@ -92,6 +92,10 @@ For better accessibility, I used `role="list"` on the `<ul>` elements in the HTM
 
 I need to learn image optimization! Currently, the largest file in this project is the screenshot I took for this README. I learned how to optimize font files. Now the file size of the screenshot is larger than the size of all font files combined.
 
+**UPDATE:**
+
+I used [TinyPNG](https://tinypng.com/) to compress the image file of the screenshot. It reduced the file size by 78%, from 724 KB to 162 KB.
+
 ### Useful resources
 
 - [Creative list styling](https://web.dev/articles/creative-list-styling) by Michelle Barker for web.de - This article helped me to figure out how to style the list markers for both the ordered and unordered lists.
